@@ -22,15 +22,6 @@
   margin-top: 30px;
 } */
 
-/* .main {
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  z-index: 20;
-  position: relative;
-  margin: 0 auto;
-} */
-
 i.fa.fa-angle-double-down {
   font-size: 3.5em;
   /* text-align: center; */
@@ -40,17 +31,6 @@ i.fa.fa-angle-double-down {
   color: #03b9e7;
   position: relative;
 }
-
-/* .main-content-square{
-  position: relative;
-  width:50%;
-  margin:0 auto;
-}
-.main-content-square:after{
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-} */
 
 p {
   font-size: 1.5em;
@@ -84,13 +64,7 @@ p {
   margin-top: 60px;
 }
 
-/* .ad {
-  margin: 0 auto;
-  width: 100%;
-} */
-
 .shark-ad {
-  /* margin-top: 70px; */
   width: 50%;
   text-align: center;
   display: block;
@@ -101,20 +75,30 @@ p {
   margin: 0 auto;
 }
 
-.cta {
-  width: 381px;
-  padding-top: 100px;
-  margin: 0 auto;
+.cta-div{
+  width: 18em;
+  margin: auto;
 }
-
-button {
+.button {
+  font-family: 'Lato', sans-serif;
+  background-color: #d90001;
+  border: 2px solid rgb(182, 184, 184);
+  color: white;
+  width: 100%;
+  padding: 15px 65px 15px;
+  /* text-transform: content; */
+  font-size: 1.2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
   margin: 0 auto;
+  text-decoration: none;
 }
-
-/* .arrow-right {
-  float: right;
-  margin: 165px -150px 0px 0px;
-} */
+.cta1{
+  border-radius: .8em;
+  display: block;
+  margin-top: 100px;
+}
 
 .arrow-right {
   position: relative;
@@ -129,14 +113,18 @@ button {
 }
 
 .share-with-a-friend {
-  /* text-align: center; */
-  margin: 0 auto;
+  margin: 10px auto 0;
   width: 60%;
   font-size: 1.1em;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  /* width: 100%;
-  width: 45%; */
+}
+
+.share a:link{
+  color:darkgrey;
+}
+.share a:hover{
+  color:#104618;
 }
 
 .divider-image-eco {
@@ -216,7 +204,7 @@ h5 {
 .pop-up {
   color: #73AD21;
   margin: 0 auto;
-  width: 50%;
+  /* width: 50%; */
   text-align: center;
   font-family: 'Lato', sans-serif;
   line-height: 25px;
@@ -232,22 +220,17 @@ span {
   border-radius: 2px;
   cursor: pointer;
   transition: 0.3s;
-  width: 500px;
+  max-width: 400px;
   padding: 5px;
-  border: 2px solid rgba(115, 173, 33)
+  border: 2px solid rgb(115, 173, 33)
 }
-
-.share {}
 
 #myImg:hover {
   opacity: 0.7;
 }
-
-element.style {
-  width: 100%;
-  max-width: 360px;
-}
-
+/* element.style {
+    max-width: 390px;
+} */
 /*-- Modal--*/
 
 .modal {
@@ -260,7 +243,7 @@ element.style {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(166, 166, 166);
+  background-color: rgba(20, 20, 20, .9);
 }
 
 .modal-content {
@@ -396,15 +379,15 @@ element.style {
   }
   .plastic-rings-img {
     float: right;
-    margin: 15px 15px 0 0;
-    width: 37%;
-    padding: 0 17px 0 25px;
+    margin: 15px 17px 0 0;
+    width: 50%;
+    padding: 0 16px 0 18px;
   }
   .globe-icon-img {
     float: left;
-    margin-top: 10px;
-    width: 32%;
-    padding: 0 30px 0 25px;
+    margin-top: -4px;
+    width: 46%;
+    padding: 0 30px 0 27px;
   }
   .content {
     border-radius: 20px;
@@ -435,8 +418,9 @@ element.style {
     margin: 0 auto;
   }
   .divider-image-eco {
-    margin: 49px 0 0px 0;
-    width: 100%;
+    margin: 49px 0px 0px -60px;
+    width: 133%;
+    height: 20%;
     text-align: center;
   }
   .ways-to-cut-waste {
@@ -444,7 +428,7 @@ element.style {
     width: 100%;
     /* border: 2px solid rgba(115, 173, 33, .4); */
     margin-bottom: 100px;
-    background: rgba(115, 173, 33, .2);
+    background: rgba(115, 173, 33, .1);
     line-height: 35px;
     display: block;
     text-align: left;
@@ -455,10 +439,10 @@ element.style {
   }
   h2 {
     color: #73AD21;
-    font-size: 1.8em;
+    font-size: 1.55em;
     font-family: 'Lato', sans-serif;
     line-height: 45px;
-    padding: 0px;
+    padding-left: 5px;
     margin: 0px;
     padding-bottom: 5px
   }
@@ -470,7 +454,7 @@ element.style {
     text-align: left;
     list-style: none;
     counter-reset: item;
-    padding: 30px 5px 0px;
+    padding: 30px 15px 30px;
     margin-top: -10px;
   }
   li {
@@ -485,7 +469,7 @@ element.style {
     opacity: .75;
     border-radius: 100%;
     color: white;
-    width: 2.2em;
+    width: 2.3em;
     text-align: center;
     display: inline-block;
   }
@@ -496,6 +480,42 @@ element.style {
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+  /* .button {
+      font-family: 'Lato', sans-serif;
+      background-color: #d90001;
+      border: 2px solid rgb(182, 184, 184);
+      color: white;
+      padding: 15px;
+      text-transform: content;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-align: center;
+      margin: auto;
+      width: 18em;
+      text-decoration: none;
+  }
+  .cta1{
+    border-radius: .8em;
+    display: block;
+    margin-top: 100px;
+  } */
+
+
+  .cta1{
+    border-radius: .8em;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .share-with-a-friend {
+    margin: 10px auto 0;
+    width: 60%;
+    font-size: .9em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color:grey;
   }
 }
 
