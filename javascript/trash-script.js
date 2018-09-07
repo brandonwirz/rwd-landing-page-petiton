@@ -14,3 +14,11 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
 }
+
+// scroll to content start
+$(document).ready(function() {
+    $('#arrows-down').click(function(){
+        $('html, body').animate({scrollTop:500}, 'medium', 'swing');
+        return false;
+    });
+});
