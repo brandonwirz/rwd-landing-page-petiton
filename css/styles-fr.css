@@ -7,12 +7,13 @@
 body {
   height: 300px;
 }
+
 /* .container {
   max-width: 100%;
   margin: 0 auto;
 } */
 .main {
-  background-image: url("../images/header-1913x496.png");
+  background-image: url("../images/header-1913x496-bl.png");
   /* background-color: #7ba7ce; */
   width: 100%;
   height: 496px;
@@ -21,13 +22,33 @@ body {
   position: relative;
 }
 
+div.headline {
+  position: absolute;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  z-index: 50;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 422px;
+  width: 590px;
+}
+
+div.headline-mobile {
+  visibility: hidden;
+}
+
 .arrows-down {
   display: block;
   margin: 20px auto;
   padding: 10px;
   width: 50px;
   height: 50px;
-  background-image: linear-gradient(#0593e9, #6394b9);
+  background-image: linear-gradient(#0559b1, #03cbf3);
   opacity: .9;
   border-radius: 50%;
 }
@@ -59,11 +80,16 @@ p {
 }
 
 .plastic-rings-img {
-  float: right;
+  /* float: right;
   margin: 25px 15px 0 0;
   width: 268px;
   padding: 10px 25px 0 25px;
+  border-radius: 50%; */
+  float: right;
+  margin: 35px 26px 0 0;
+  width: 215px;
   border-radius: 50%;
+  border: 4px solid white;
 }
 
 .globe-icon-img {
@@ -207,6 +233,12 @@ h5 {
   padding: 0;
 }
 
+/* .recycle{
+  float:right;
+  opacity: .1;
+  margin-top:50px;
+  z-index: 0;
+} */
 .cta2 {
   width: 381px;
   padding-top: 90px;
@@ -360,12 +392,28 @@ hr {
 
 @media only screen and (max-width: 1024px) {
   .main {
-    background-image: url("../images/header-350.png");
+    background-image: url("../images/header-350-bl.png");
     height: 350px;
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
     /* background-size: contain; */
+  }
+
+  div.headline {
+    position: absolute;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    z-index: 50;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 300px;
+    width: 400px;
   }
 
   p {
@@ -376,10 +424,15 @@ hr {
   }
 
   .plastic-rings-img {
-    float: right;
+    /* float: right;
     margin: 25px 15px 0 0;
     width: 268px;
-    padding: 10px 25px 0 25px;
+    padding: 10px 25px 0 25px; */
+    float: right;
+    margin: 40px 26px 0 0;
+    width: 215px;
+    border-radius: 50%;
+    border: 4px solid white;
   }
 
   .globe-icon-img {
@@ -419,18 +472,39 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .main {
-    background-image: url("../images/header-275.png");
+    background-image: url("../images/header-275-bl.png");
     height: 275px;
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
   }
 
+  div.headline {
+    position: absolute;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    z-index: 50;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 235px;
+    width: 330px;
+  }
+
   .plastic-rings-img {
-    float: right;
+    /* float: right;
     margin: 25px 15px 0 0;
     width: 200px;
-    padding: 10px 25px 0 25px;
+    padding: 10px 25px 0 25px; */
+    float: right;
+    margin: 30px 26px 0 0;
+    width: 155px;
+    border-radius: 50%;
+    border: 2px solid white;
   }
 
   h2 {
@@ -546,12 +620,34 @@ hr {
 
 @media screen and (max-width: 500px) {
   .main {
-    background-image: url("../images/header-269-m.png");
+    background-image: url("../images/header-269-bl.png");
     height: 200px;
     background-position: top;
     background-repeat: no-repeat;
     /* background: cover; */
     position: relative;
+    z-index: 1;
+  }
+
+  div.headline {
+    display: none;
+  }
+
+  div.headline-mobile {
+    visibility: visible;
+    position: absolute;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    z-index: 100;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 166px;
+    width: 380px;
   }
 
   p {
@@ -569,9 +665,10 @@ hr {
 
   .plastic-rings-img {
     float: right;
-    margin: 15px 17px 0 0;
+    margin: 20px 26px 0 0;
     width: 150px;
-    padding: 0 16px 0 18px;
+    border-radius: 50%;
+    border: 4px solid white;
   }
 
   .globe-icon-img {
@@ -780,7 +877,7 @@ hr {
     width: 92%;
     height: 450px;
     background-position: top;
-    background-image: url(../images/footer-graphic.jpg);
+    background-image: url("../images/footer-graphic.jpg");
     /* background-size: contain; */
     background-repeat: no-repeat;
   }
