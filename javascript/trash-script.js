@@ -18,7 +18,7 @@ span.onclick = function() {
 // scroll to content start
 $(document).ready(function() {
     $('#arrows-down').click(function(){
-        $('html, body').animate({scrollTop:500}, 'medium', 'swing');
+        $('html, body').animate({scrollTop:570}, 'medium', 'swing');
         return false;
     });
 });
