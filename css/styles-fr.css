@@ -42,6 +42,10 @@ div.headline-mobile {
   visibility: hidden;
 }
 
+.headline a{
+  text-decoration:none;
+}
+
 .arrows-down {
   display: block;
   margin: 20px auto;
@@ -51,6 +55,8 @@ div.headline-mobile {
   background-image: linear-gradient(#0559b1, #03cbf3);
   opacity: .9;
   border-radius: 50%;
+  border: 1px solid rgb(193, 192, 196);
+  cursor: pointer;
 }
 
 .arrows-down:hover {
@@ -496,10 +502,6 @@ hr {
   }
 
   .plastic-rings-img {
-    /* float: right;
-    margin: 25px 15px 0 0;
-    width: 200px;
-    padding: 10px 25px 0 25px; */
     float: right;
     margin: 30px 26px 0 0;
     width: 155px;
@@ -657,19 +659,36 @@ hr {
     padding: 0 15px 0 15px;
   }
 
+
   .arrows-down {
-    /* margin: 10px auto;
-    width: 8%; */
-    display: none;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(#0559b1, #03cbf3);
+    opacity: .9;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .arrows-down:hover {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
   }
 
   .plastic-rings-img {
     float: right;
-    margin: 20px 26px 0 0;
-    width: 150px;
+    margin: 30px 26px 0 0;
+    width: 155px;
     border-radius: 50%;
-    border: 4px solid white;
+    border: 2px solid white;
   }
+
 
   .globe-icon-img {
     float: left;
@@ -686,7 +705,7 @@ hr {
     width: 90%;
     height: 26%;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 15px;
   }
 
   .shark-ad {
